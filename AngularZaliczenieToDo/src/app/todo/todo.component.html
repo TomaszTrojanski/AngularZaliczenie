@@ -7,8 +7,6 @@
             <mat-form-field appearance="outline">
               <mat-label>Task Name</mat-label>
               <input formControlName="item" matInput placeholder="Placeholder">
-              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-              <mat-hint>add task</mat-hint>
             </mat-form-field>
             <button *ngIf="!isEditEnabled" (click)="addTask()" mat-raised-button [disabled]="todoForm.invalid" color="primary">Add</button>
             <button *ngIf="isEditEnabled" (click)="updateTask()" mat-raised-button [disabled]="todoForm.invalid" color="blue">Edit</button>
